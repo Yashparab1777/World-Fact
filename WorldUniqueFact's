@@ -1,0 +1,50 @@
+# Mysterious Facts App
+
+A web application that displays random mysterious and interesting facts from around the world. The app features a clean, modern interface with smooth animations and a glass-morphism design.
+
+## Features
+
+- Random fact generation with titles and descriptions
+- Smooth transition animations
+- Responsive design for all devices
+- Glass-morphism UI elements
+- Gradient background
+
+## Project Structure
+
+
+## Setup Instructions
+
+1. Clone or download this repository
+2. Open `index.html` in a web browser
+3. Click the "Generate Fact" button to display random mysterious facts
+
+## Customization
+
+You can customize the app by:
+
+1. Adding new facts in the `facts` array in `script.js`
+2. Modifying the color scheme in `style.css`
+3. Adjusting the layout and sizing in `style.css`
+
+## Technologies Used
+
+- HTML5
+- CSS3
+- JavaScript (ES6+)
+
+## Browser Support
+
+- Chrome (latest)
+- Firefox (latest)
+- Safari (latest)
+- Edge (latest)
+
+## License
+
+MIT License
+
+## Author
+
+[Your Name]
+
