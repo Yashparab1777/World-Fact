@@ -1,0 +1,43 @@
+// script.js
+const facts = [
+    {
+        title: "The Wow! Signal (1977)",
+        description: "A mysterious radio signal from space that lasted 72 seconds and has never been detected again."
+    },
+    {
+        title: "The Dancing Plague of 1518",
+        description: "In Strasbourg, France, people mysteriously started dancing uncontrollably for days until they died from exhaustion."
+    },
+    {
+        title: "The Hessdalen Lights",
+        description: "Unexplained lights appearing in Norway's Hessdalen Valley since the 1940s. Scientists still can't explain their origin."
+    },
+    {
+        title: "Blood Falls, Antarctica",
+        description: "A blood-red waterfall flowing from Taylor Glacier, colored by iron-rich saltwater trapped for millions of years."
+    },
+    {
+        title: "The Great Attractor",
+        description: "A mysterious gravitational anomaly pulling our galaxy and thousands of others towards it at millions of miles per hour."
+    }
+];
+
+const factText = document.getElementById('fact-text');
+const generateBtn = document.getElementById('generate-btn');
+
+function generateFact() {
+    const randomIndex = Math.floor(Math.random() * facts.length);
+    const fact = facts[randomIndex];
+    factText.innerHTML = `<strong>${fact.title}</strong><br><br>${fact.description}`;
+    
+    // Add animation
+    factText.style.opacity = '0';
+    setTimeout(() => {
+        factText.style.opacity = '1';
+    }, 100);
+}
+
+generateBtn.addEventListener('click', generateFact);
+
+// Generate initial fact when page loads
+window.onload = generateFact;
